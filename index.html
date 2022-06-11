@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bigtext {
+        font-size: 4rem;
+      }
+      .smalltext {
+        font-size: 0.5rem;
+      }
+      p {
+        text-align: center;
+      }
+      .buttoncontainer {
+        background-color: red;
+        padding: 1rem;
+        border: 1rem solid green;
+        margin: 1rem;
+        margin: auto;
+				width: fit-content;
+      
+			}
+			.mybutton{
+				margin:auto;
+			}
+    </style>
+    <script>
+      function changeText() {
+        const eplelement = document.getElementById("eplelement");
+        eplelement.innerText = "små";
+        eplelement.className = "smalltext";
+        console.log("test");
+      }
+    </script>
+  </head>
+  <body>
+    <p>Gustav liker <b id="eplelement" class="bigtext">store</b> epler</p>
+    <div class="buttoncontainer">
+      <button class="mybutton" onclick="changeText()">Endre eplestørrelse</button>
+	
+    </div>
+  </body>
+</html>
